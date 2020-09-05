@@ -1,0 +1,3 @@
+# hello-world
+###THIS is a repo for bankers algorithm in c
+For Operating Systems....
