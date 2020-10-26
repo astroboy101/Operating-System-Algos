@@ -1,3 +1,3 @@
 # hello-world
-###THIS is a repo for bankers algorithm in c
+###THIS is a repo for programs in OS
 For Operating Systems....
