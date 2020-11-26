@@ -1,0 +1,19 @@
+declare 
+doc_dept doctor.dept_no%type;
+qualif doctor.qualification%type;
+k number;
+k1 number;
+begin 
+k:=0;
+k1:=0;
+doc_dept:=&doc_dept;
+qualif:=&qualif;
+select count(*) into k from doctor where dept_no=doc_dept and qualification!=qualif;
+select count(*) into k1 from doctor where dept_no=doc_dept and qualification=qualif;
+if k<k1 then 
+dbms_output.put_line('WELL QUAlIFIED');
+else
+dbms_output.put_line('QUAlIFIED');
+end if; 
+end;
+/

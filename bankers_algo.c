@@ -4,7 +4,7 @@ struct process
 {
     float arrival,burst_time;
 };
-main()
+int main()
 {
     int n,m;
     printf("enter no of process: ");
@@ -13,11 +13,11 @@ main()
     scanf("%d",&m);
     int max[m],i,sum[m],p[n];
     struct process p1[n];
-    printf("Enter arrival time and burst time of the process\n");
-    for(i=0;i<n;i++)
-    {
-        scanf("%d %d",&p1[i].arrival,&p1[i].burst_time);
-    }
+    //printf("Enter arrival time and burst time of the process\n");
+    //for(i=0;i<n;i++)
+    //{
+      //  scanf("%d %d",&p1[i].arrival,&p1[i].burst_time);
+    //}
     printf("\nenter maximum number of each resource: ");
     for(i=0;i<m;i++)
     scanf("%d",&max[i]);
@@ -96,7 +96,7 @@ main()
         index=index%n;
     }
     for(i=0;i<n;i++)
-        printf("P%d->",p[i]);
+        printf("P%d  ",p[i]);
 
 
 }

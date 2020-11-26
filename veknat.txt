@@ -1,0 +1,8 @@
+create or replace function guest_det(guest1_id reservation_19BDS0017.guest_id%type) return int is
+begin
+select room_type_name,check_date_in,check_date_out from (reservation_19BDS0017 k join room_19BDS0017 l join roomtype_19BDS0017 on k.room_id=l.room_id on roomtype_19BDS0017.room_type_id=l.room_type_id) where k.guest_id=guest1_d;
+return 0;
+end;
+/
+
+Function created
